@@ -7,6 +7,7 @@ public class BallMovement : MonoBehaviour
     public float xspeed;
     public float yspeed;
     public bool goingRight;
+    public float timeInterval;
     void GoBall()
     {
         float rand = Random.Range(0, 2);
@@ -33,6 +34,13 @@ public class BallMovement : MonoBehaviour
     {
         rb2d.velocity = Vector2.zero;
         transform.position = Vector2.zero;
+        xspeed = 0;
+        yspeed = 0;
+        if (timeInterval > 2)
+        {
+            GoBall();
+            timeInterval = 0;
+        }
     }
     
     void OnCollisionEnter2D(Collision2D coll)
@@ -49,6 +57,7 @@ public class BallMovement : MonoBehaviour
         else if (coll.gameObject.tag == "leftright")
         {
             ResetBall();
+            timeInterval += Time.deltaTime;
         }
     }
 }

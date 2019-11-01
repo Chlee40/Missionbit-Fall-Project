@@ -1,6 +1,6 @@
 /target:library
 /nowarn:0169
-/out:"Temp/Unity.VSCode.Editor.dll"
+/out:"Temp/Unity.CollabProxy.Editor.dll"
 /debug:portable
 /optimize-
 /nostdlib+
@@ -74,10 +74,12 @@
 /reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/Unity.app/Contents/Managed/UnityEditor.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll"
-/reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
+/reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
 /reference:"/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
-/reference:"/Users/missionbit/PongFinal/Missionbit-Fall-Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll"
+/reference:"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll"
+/reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+/reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll"
@@ -293,7 +295,20 @@
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"/Users/missionbit/PongFinal/Missionbit-Fall-Project/Library/PackageCache/com.unity.ide.vscode@1.1.0/Editor/ProjectGeneration.cs"
-"/Users/missionbit/PongFinal/Missionbit-Fall-Project/Library/PackageCache/com.unity.ide.vscode@1.1.0/Editor/Utility.cs"
-"/Users/missionbit/PongFinal/Missionbit-Fall-Project/Library/PackageCache/com.unity.ide.vscode@1.1.0/Editor/VSCodeDiscovery.cs"
-"/Users/missionbit/PongFinal/Missionbit-Fall-Project/Library/PackageCache/com.unity.ide.vscode@1.1.0/Editor/VSCodeScriptEditor.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/AssemblyInfo.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Bootstrap.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/CollabAnalytics.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/CollabHistoryWindow.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/CollabToolbarButton.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/CollabToolbarWindow.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Presenters/CollabHistoryPresenter.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/BuildStatusButton.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryDropDown.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryDropDownItem.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryItem.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryItemFactory.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/CollabHistoryRevisionLine.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/HistoryProgressSpinner.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/ICollabHistoryItemFactory.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/PagedListView.cs"
+"/Users/missionbit/Documents/GitHub/Missionbit-Fall-Project/Library/PackageCache/com.unity.collab-proxy@1.2.16/Editor/Collab/Views/StatusView.cs"
