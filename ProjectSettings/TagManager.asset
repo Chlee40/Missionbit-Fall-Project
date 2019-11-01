@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - topbot
+  - leftright
   layers:
   - Default
   - TransparentFX

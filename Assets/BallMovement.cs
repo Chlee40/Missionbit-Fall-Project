@@ -42,10 +42,13 @@ public class BallMovement : MonoBehaviour
         xspeed *= -1f;
         }
         
-        if (coll.gameObject.tag == "topbot")
+        else if (coll.gameObject.tag == "topbot")
         {
-            print("afdsfdasfsadfds");
-            yspeed *= -1f;
+        yspeed *= -1f;
+        }
+        else if (coll.gameObject.tag == "leftright")
+        {
+            ResetBall();
         }
     }
 }
