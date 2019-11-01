@@ -37,8 +37,14 @@ public class BallMovement : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.collider.CompareTag("Player"))
+        if (coll.gameObject.name == "PaddlePlayer")
+        { 
+        xspeed *= -1f;
+        }
+        
+        if (coll.gameObject.tag == "topbot")
         {
+            print("afdsfdasfsadfds");
             yspeed *= -1f;
         }
     }
