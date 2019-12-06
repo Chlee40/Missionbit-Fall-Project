@@ -28,6 +28,12 @@ public class BallMovement : MonoBehaviour
     private void Update()
     {
         transform.Translate(new Vector3(xspeed, yspeed, 0f));
+
+        if (timeInterval > 2)
+        {
+            GoBall();
+            timeInterval = 0;
+        }
     }
 
     void ResetBall()
@@ -36,11 +42,7 @@ public class BallMovement : MonoBehaviour
         transform.position = Vector2.zero;
         xspeed = 0;
         yspeed = 0;
-        if (timeInterval > 2)
-        {
-            GoBall();
-            timeInterval = 0;
-        }
+
     }
     
     void OnCollisionEnter2D(Collision2D coll)
